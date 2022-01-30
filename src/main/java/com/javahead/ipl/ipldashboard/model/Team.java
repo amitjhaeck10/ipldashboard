@@ -29,7 +29,46 @@ public class Team {
         this.totalMatches=totalMatches;
     }
 
+    public void setMatches(List<Match> matches) {
+        this.matches = matches;
+    }
+
     public Team(){
     }
 
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setTeamName(String teamName) {
+        this.teamName = teamName;
+    }
+
+    public void setTotalMatches(Long totalMatches) {
+        this.totalMatches = totalMatches;
+    }
+
+    public void setTotalWins(Long totalWins) {
+        this.totalWins = totalWins;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getTeamName() {
+        return teamName;
+    }
+
+    public Long getTotalMatches() {
+        return totalMatches;
+    }
+
+    public Long getTotalWins() {
+        return totalWins;
+    }
+
+    public List<Match> getMatches() {
+        return matches;
+    }
 }
