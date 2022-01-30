@@ -29,6 +29,7 @@ public class MatchDataItemProcessor implements ItemProcessor<MatchDataInput, Mat
         match.setWinByRuns(Integer.parseInt(matchDataInput.getWin_by_runs()));
         match.setWinByWickets(Integer.parseInt(matchDataInput.getWin_by_wickets()));
         match.setDate(LocalDate.parse(matchDataInput.getDate()));
+        match.setVenue(matchDataInput.getVenue());
 
         String firstInningTeam,secondInningTeam;
         if("bat".equals(match.getTossDecision())){
