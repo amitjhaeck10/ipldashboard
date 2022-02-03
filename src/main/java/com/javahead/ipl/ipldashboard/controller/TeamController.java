@@ -25,7 +25,7 @@ public class TeamController {
     @GetMapping("/team/{teamName}")
     public Team getTeamInfo(@PathVariable String teamName) {
         Team team = this.teamRepository.findByTeamName(teamName);
-        Pageable pageable = PageRequest.of(0, 5);
+        Pageable pageable = PageRequest.of(0, 4);
         List<Match> matches = this.matchRepository.getByTeam1OrTeam2OrderByDateDesc(teamName, teamName, pageable);
         team.setMatches(matches);
 

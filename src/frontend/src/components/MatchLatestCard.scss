@@ -1,0 +1,25 @@
+.MatchLatestCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    margin-bottom: 20px;
+
+    .macth-date,.match-venue,.match-winner{
+        margin-top: 10px;
+    }
+
+    .additional-details{
+        text-align: right;
+        & > p{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.win-card{
+   background-color: #53a864;
+}
+
+.loss-card{
+   background-color:#99392a;
+}
