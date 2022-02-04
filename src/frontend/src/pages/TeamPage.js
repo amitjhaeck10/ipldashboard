@@ -29,6 +29,9 @@ export const TeamPage = () => {
   return (
     <div className="TeamPage">
         <div className='team-name-section'>
+          <h2 className='home-page-section'>
+             <Link to={`/home`}>Home</Link>
+          </h2>     
           <h1 className='team-name'>{team.teamName}
           </h1> 
         </div>
@@ -42,7 +45,8 @@ export const TeamPage = () => {
               ]}
             />
         </div>
-        <div className='team-detail-section'>
+
+       <div className='team-detail-section'>
           <h3>Match Latest Card</h3>
           <MatchLatestCard  teamName ={team.teamName}  match={team.matches[0]}/>
         </div>

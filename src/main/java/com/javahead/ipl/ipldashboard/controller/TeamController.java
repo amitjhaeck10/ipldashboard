@@ -22,6 +22,12 @@ public class TeamController {
     @Autowired
     private MatchRepository matchRepository;
 
+
+    @GetMapping("/team")
+    public Iterable<Team> getAllTeamName(){
+        return teamRepository.findAll();
+    }
+
     @GetMapping("/team/{teamName}")
     public Team getTeamInfo(@PathVariable String teamName) {
         Team team = this.teamRepository.findByTeamName(teamName);
